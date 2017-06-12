@@ -7,7 +7,7 @@ import tensorflow as tf
 import vgg19_trainable as vgg19
 import utils
 
-img1 = utils.load_image("./test_data/tiger.jpeg")
+img1 = utils.load_image_cope("./test_data/tiger.jpeg")
 img1_true_result = [1 if i == 292 else 0 for i in range(1000)]  # 1-hot result for tiger
 
 batch1 = img1.reshape((1, 224, 224, 3))
